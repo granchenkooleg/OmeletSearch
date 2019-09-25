@@ -17,6 +17,7 @@
 		56A37A16233B6D750037A8BA /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A15233B6D750037A8BA /* Repo.swift */; };
 		56A37A18233B6E620037A8BA /* OmeletSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A17233B6E620037A8BA /* OmeletSearchTableViewCell.swift */; };
 		56A37A1A233B78090037A8BA /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A19233B78090037A8BA /* RepoViewModel.swift */; };
+		56A37A1E233C06750037A8BA /* URL + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A1D233C06750037A8BA /* URL + ext.swift */; };
 		B4BA86F51BA93EF4FF6DD40E /* Pods_OmeletSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C27A1EF11AD8A7E9484ADE /* Pods_OmeletSearchTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		56A37A15233B6D750037A8BA /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		56A37A17233B6E620037A8BA /* OmeletSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmeletSearchTableViewCell.swift; sourceTree = "<group>"; };
 		56A37A19233B78090037A8BA /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		56A37A1D233C06750037A8BA /* URL + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL + ext.swift"; sourceTree = "<group>"; };
 		57C27A1EF11AD8A7E9484ADE /* Pods_OmeletSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmeletSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658A79AF395E5DD5AE0CEF6B /* Pods-OmeletSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmeletSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-OmeletSearchTests/Pods-OmeletSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		704426E7BF9F6EBBF49297BA /* Pods-OmeletSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmeletSearchTests.release.xcconfig"; path = "Target Support Files/Pods-OmeletSearchTests/Pods-OmeletSearchTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		5642E6B7233B6AEC00C4DF8C /* OmeletSearch */ = {
 			isa = PBXGroup;
 			children = (
+				56A37A1C233C062C0037A8BA /* Extensions */,
 				5642E6D9233B6BFA00C4DF8C /* Model */,
 				56A37A13233B6D0D0037A8BA /* ViewModel */,
 				56A37A12233B6CFF0037A8BA /* Controller */,
@@ -155,6 +158,14 @@
 				5642E6BC233B6AEC00C4DF8C /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		56A37A1C233C062C0037A8BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56A37A1D233C06750037A8BA /* URL + ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C193CAE426902733210133E1 /* Frameworks */ = {
@@ -346,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56A37A1A233B78090037A8BA /* RepoViewModel.swift in Sources */,
+				56A37A1E233C06750037A8BA /* URL + ext.swift in Sources */,
 				56A37A16233B6D750037A8BA /* Repo.swift in Sources */,
 				56A37A18233B6E620037A8BA /* OmeletSearchTableViewCell.swift in Sources */,
 				5642E6BB233B6AEC00C4DF8C /* OmeletSearchViewController.swift in Sources */,
