@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E3464D31306ED9F7013CEC3 /* Pods_OmeletSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294C41F3CAB5DE5D395E91F7 /* Pods_OmeletSearch.framework */; };
+		5642E6B9233B6AEC00C4DF8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642E6B8233B6AEC00C4DF8C /* AppDelegate.swift */; };
+		5642E6BB233B6AEC00C4DF8C /* OmeletSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642E6BA233B6AEC00C4DF8C /* OmeletSearchViewController.swift */; };
+		5642E6BE233B6AEC00C4DF8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5642E6BC233B6AEC00C4DF8C /* Main.storyboard */; };
+		5642E6C0233B6AEF00C4DF8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5642E6BF233B6AEF00C4DF8C /* Assets.xcassets */; };
+		5642E6C3233B6AEF00C4DF8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5642E6C1233B6AEF00C4DF8C /* LaunchScreen.storyboard */; };
+		5642E6CE233B6AEF00C4DF8C /* OmeletSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5642E6CD233B6AEF00C4DF8C /* OmeletSearchTests.swift */; };
+		56A37A16233B6D750037A8BA /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A15233B6D750037A8BA /* Repo.swift */; };
+		56A37A18233B6E620037A8BA /* OmeletSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A17233B6E620037A8BA /* OmeletSearchTableViewCell.swift */; };
+		56A37A1A233B78090037A8BA /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A37A19233B78090037A8BA /* RepoViewModel.swift */; };
+		B4BA86F51BA93EF4FF6DD40E /* Pods_OmeletSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C27A1EF11AD8A7E9484ADE /* Pods_OmeletSearchTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5642E6CA233B6AEF00C4DF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5642E6AD233B6AEC00C4DF8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5642E6B4233B6AEC00C4DF8C;
+			remoteInfo = OmeletSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		294C41F3CAB5DE5D395E91F7 /* Pods_OmeletSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmeletSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C00E0F3A27C78195436F4F9 /* Pods-OmeletSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmeletSearch.release.xcconfig"; path = "Target Support Files/Pods-OmeletSearch/Pods-OmeletSearch.release.xcconfig"; sourceTree = "<group>"; };
+		5642E6B5233B6AEC00C4DF8C /* OmeletSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OmeletSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5642E6B8233B6AEC00C4DF8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		5642E6BA233B6AEC00C4DF8C /* OmeletSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmeletSearchViewController.swift; sourceTree = "<group>"; };
+		5642E6BD233B6AEC00C4DF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5642E6BF233B6AEF00C4DF8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		5642E6C2233B6AEF00C4DF8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5642E6C4233B6AEF00C4DF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5642E6C9233B6AEF00C4DF8C /* OmeletSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OmeletSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5642E6CD233B6AEF00C4DF8C /* OmeletSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmeletSearchTests.swift; sourceTree = "<group>"; };
+		5642E6CF233B6AEF00C4DF8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56A37A15233B6D750037A8BA /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		56A37A17233B6E620037A8BA /* OmeletSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmeletSearchTableViewCell.swift; sourceTree = "<group>"; };
+		56A37A19233B78090037A8BA /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		57C27A1EF11AD8A7E9484ADE /* Pods_OmeletSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OmeletSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		658A79AF395E5DD5AE0CEF6B /* Pods-OmeletSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmeletSearchTests.debug.xcconfig"; path = "Target Support Files/Pods-OmeletSearchTests/Pods-OmeletSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		704426E7BF9F6EBBF49297BA /* Pods-OmeletSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmeletSearchTests.release.xcconfig"; path = "Target Support Files/Pods-OmeletSearchTests/Pods-OmeletSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1CAEAEA278DBEEF688C68B9 /* Pods-OmeletSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmeletSearch.debug.xcconfig"; path = "Target Support Files/Pods-OmeletSearch/Pods-OmeletSearch.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5642E6B2233B6AEC00C4DF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E3464D31306ED9F7013CEC3 /* Pods_OmeletSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5642E6C6233B6AEF00C4DF8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BA86F51BA93EF4FF6DD40E /* Pods_OmeletSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5642E6AC233B6AEC00C4DF8C = {
+			isa = PBXGroup;
+			children = (
+				5642E6B7233B6AEC00C4DF8C /* OmeletSearch */,
+				5642E6CC233B6AEF00C4DF8C /* OmeletSearchTests */,
+				5642E6B6233B6AEC00C4DF8C /* Products */,
+				CEFFC0EC0B627A4971B6DA72 /* Pods */,
+				C193CAE426902733210133E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5642E6B6233B6AEC00C4DF8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5642E6B5233B6AEC00C4DF8C /* OmeletSearch.app */,
+				5642E6C9233B6AEF00C4DF8C /* OmeletSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5642E6B7233B6AEC00C4DF8C /* OmeletSearch */ = {
+			isa = PBXGroup;
+			children = (
+				5642E6D9233B6BFA00C4DF8C /* Model */,
+				56A37A13233B6D0D0037A8BA /* ViewModel */,
+				56A37A12233B6CFF0037A8BA /* Controller */,
+				56A37A14233B6D170037A8BA /* View */,
+				5642E6D8233B6BC100C4DF8C /* Supporting  Files */,
+				5642E6C4233B6AEF00C4DF8C /* Info.plist */,
+			);
+			path = OmeletSearch;
+			sourceTree = "<group>";
+		};
+		5642E6CC233B6AEF00C4DF8C /* OmeletSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				5642E6CD233B6AEF00C4DF8C /* OmeletSearchTests.swift */,
+				5642E6CF233B6AEF00C4DF8C /* Info.plist */,
+			);
+			path = OmeletSearchTests;
+			sourceTree = "<group>";
+		};
+		5642E6D8233B6BC100C4DF8C /* Supporting  Files */ = {
+			isa = PBXGroup;
+			children = (
+				5642E6B8233B6AEC00C4DF8C /* AppDelegate.swift */,
+				5642E6BF233B6AEF00C4DF8C /* Assets.xcassets */,
+				5642E6C1233B6AEF00C4DF8C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting  Files";
+			sourceTree = "<group>";
+		};
+		5642E6D9233B6BFA00C4DF8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A37A15233B6D750037A8BA /* Repo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		56A37A12233B6CFF0037A8BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5642E6BA233B6AEC00C4DF8C /* OmeletSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		56A37A13233B6D0D0037A8BA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				56A37A19233B78090037A8BA /* RepoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56A37A14233B6D170037A8BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56A37A17233B6E620037A8BA /* OmeletSearchTableViewCell.swift */,
+				5642E6BC233B6AEC00C4DF8C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C193CAE426902733210133E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				294C41F3CAB5DE5D395E91F7 /* Pods_OmeletSearch.framework */,
+				57C27A1EF11AD8A7E9484ADE /* Pods_OmeletSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFFC0EC0B627A4971B6DA72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1CAEAEA278DBEEF688C68B9 /* Pods-OmeletSearch.debug.xcconfig */,
+				4C00E0F3A27C78195436F4F9 /* Pods-OmeletSearch.release.xcconfig */,
+				658A79AF395E5DD5AE0CEF6B /* Pods-OmeletSearchTests.debug.xcconfig */,
+				704426E7BF9F6EBBF49297BA /* Pods-OmeletSearchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5642E6B4233B6AEC00C4DF8C /* OmeletSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5642E6D2233B6AEF00C4DF8C /* Build configuration list for PBXNativeTarget "OmeletSearch" */;
+			buildPhases = (
+				A681EE79BB82413893AD766C /* [CP] Check Pods Manifest.lock */,
+				5642E6B1233B6AEC00C4DF8C /* Sources */,
+				5642E6B2233B6AEC00C4DF8C /* Frameworks */,
+				5642E6B3233B6AEC00C4DF8C /* Resources */,
+				2B6321DBC4A105BD210BD436 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OmeletSearch;
+			productName = OmeletSearch;
+			productReference = 5642E6B5233B6AEC00C4DF8C /* OmeletSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5642E6C8233B6AEF00C4DF8C /* OmeletSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5642E6D5233B6AEF00C4DF8C /* Build configuration list for PBXNativeTarget "OmeletSearchTests" */;
+			buildPhases = (
+				4AE2CAE71A71D16A55456D6E /* [CP] Check Pods Manifest.lock */,
+				5642E6C5233B6AEF00C4DF8C /* Sources */,
+				5642E6C6233B6AEF00C4DF8C /* Frameworks */,
+				5642E6C7233B6AEF00C4DF8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5642E6CB233B6AEF00C4DF8C /* PBXTargetDependency */,
+			);
+			name = OmeletSearchTests;
+			productName = OmeletSearchTests;
+			productReference = 5642E6C9233B6AEF00C4DF8C /* OmeletSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5642E6AD233B6AEC00C4DF8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Oleg Granchenko";
+				TargetAttributes = {
+					5642E6B4233B6AEC00C4DF8C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					5642E6C8233B6AEF00C4DF8C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 5642E6B4233B6AEC00C4DF8C;
+					};
+				};
+			};
+			buildConfigurationList = 5642E6B0233B6AEC00C4DF8C /* Build configuration list for PBXProject "OmeletSearch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5642E6AC233B6AEC00C4DF8C;
+			productRefGroup = 5642E6B6233B6AEC00C4DF8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5642E6B4233B6AEC00C4DF8C /* OmeletSearch */,
+				5642E6C8233B6AEF00C4DF8C /* OmeletSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5642E6B3233B6AEC00C4DF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5642E6C3233B6AEF00C4DF8C /* LaunchScreen.storyboard in Resources */,
+				5642E6C0233B6AEF00C4DF8C /* Assets.xcassets in Resources */,
+				5642E6BE233B6AEC00C4DF8C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5642E6C7233B6AEF00C4DF8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B6321DBC4A105BD210BD436 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmeletSearch/Pods-OmeletSearch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OmeletSearch/Pods-OmeletSearch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OmeletSearch/Pods-OmeletSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE2CAE71A71D16A55456D6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmeletSearchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A681EE79BB82413893AD766C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OmeletSearch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5642E6B1233B6AEC00C4DF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56A37A1A233B78090037A8BA /* RepoViewModel.swift in Sources */,
+				56A37A16233B6D750037A8BA /* Repo.swift in Sources */,
+				56A37A18233B6E620037A8BA /* OmeletSearchTableViewCell.swift in Sources */,
+				5642E6BB233B6AEC00C4DF8C /* OmeletSearchViewController.swift in Sources */,
+				5642E6B9233B6AEC00C4DF8C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5642E6C5233B6AEF00C4DF8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5642E6CE233B6AEF00C4DF8C /* OmeletSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5642E6CB233B6AEF00C4DF8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5642E6B4233B6AEC00C4DF8C /* OmeletSearch */;
+			targetProxy = 5642E6CA233B6AEF00C4DF8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5642E6BC233B6AEC00C4DF8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5642E6BD233B6AEC00C4DF8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5642E6C1233B6AEF00C4DF8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5642E6C2233B6AEF00C4DF8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5642E6D0233B6AEF00C4DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5642E6D1233B6AEF00C4DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5642E6D3233B6AEF00C4DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1CAEAEA278DBEEF688C68B9 /* Pods-OmeletSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmeletSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.OmeletSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5642E6D4233B6AEF00C4DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C00E0F3A27C78195436F4F9 /* Pods-OmeletSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmeletSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.OmeletSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5642E6D6233B6AEF00C4DF8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658A79AF395E5DD5AE0CEF6B /* Pods-OmeletSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmeletSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.OmeletSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmeletSearch.app/OmeletSearch";
+			};
+			name = Debug;
+		};
+		5642E6D7233B6AEF00C4DF8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704426E7BF9F6EBBF49297BA /* Pods-OmeletSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OmeletSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myCompany.OmeletSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmeletSearch.app/OmeletSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5642E6B0233B6AEC00C4DF8C /* Build configuration list for PBXProject "OmeletSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5642E6D0233B6AEF00C4DF8C /* Debug */,
+				5642E6D1233B6AEF00C4DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5642E6D2233B6AEF00C4DF8C /* Build configuration list for PBXNativeTarget "OmeletSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5642E6D3233B6AEF00C4DF8C /* Debug */,
+				5642E6D4233B6AEF00C4DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5642E6D5233B6AEF00C4DF8C /* Build configuration list for PBXNativeTarget "OmeletSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5642E6D6233B6AEF00C4DF8C /* Debug */,
+				5642E6D7233B6AEF00C4DF8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5642E6AD233B6AEC00C4DF8C /* Project object */;
+}
