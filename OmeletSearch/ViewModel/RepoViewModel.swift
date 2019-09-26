@@ -32,7 +32,7 @@ class RepoViewModel {
     
     var input: Observable<String>? {
         willSet {
-            if !NetworkManager.shared.isReachable() {
+            if NetworkManager.shared.isReachable() {
                 newValue?.map { URL.bestOmeletSearch($0) }
                     .do(onNext: { _ in UIApplication.shared.isNetworkActivityIndicatorVisible = true })
                     .flatMapLatest { url in

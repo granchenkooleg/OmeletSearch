@@ -13,7 +13,7 @@ class NetworkManager {
     
     static let shared = NetworkManager()
     
-    let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "api.locutus.app")
+    let reachabilityManager = Alamofire.NetworkReachabilityManager(host: "http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet&p=3")
     
     func startNetworkReachabilityObserver() {
         reachabilityManager?.listener = { status in
@@ -41,3 +41,4 @@ class NetworkManager {
         //        return reachabilityManager?.isReachable ?? false
     }
 }
+
