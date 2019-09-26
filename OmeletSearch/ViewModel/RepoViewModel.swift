@@ -17,6 +17,7 @@ class RepoViewModel {
     private var repos: Results<OmeletResult>?
     public var changesObservable = PublishSubject<Array<OmeletResult>>()
     fileprivate let bag = DisposeBag()
+    
     init() {
         Repo.setConfig()
         
@@ -31,7 +32,7 @@ class RepoViewModel {
     
     var input: Observable<String>? {
         willSet {
-            if true {
+            if !NetworkManager.shared.isReachable() {
                 newValue?.map { URL.bestOmeletSearch($0) }
                     .do(onNext: { _ in UIApplication.shared.isNetworkActivityIndicatorVisible = true })
                     .flatMapLatest { url in
@@ -56,7 +57,6 @@ class RepoViewModel {
                 repos = realm.objects(OmeletResult.self)
                 changesObservable.onNext(Array(repos!))
             }
-            
         }
     }
 }
